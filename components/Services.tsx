@@ -1,4 +1,31 @@
-import { services } from "@/lib/data";
+import type { ComponentType } from "react";
+import { Layers, Globe, Sparkles, Smartphone, ShieldCheck } from "lucide-react";
+import { services, type Service } from "@/lib/data";
+
+// Icon choice is a presentation decision, kept here rather than in lib/data.ts
+// so the content file stays pure copy. Keyed by title — add a matching icon
+// here if you add a new service.
+const icons: Record<string, ComponentType<any>> = {
+  "Full-stack web applications": Layers,
+  "Business & marketing sites": Globe,
+  "AI/ML-powered features": Sparkles,
+  "Mobile apps": Smartphone,
+  "Security-conscious builds": ShieldCheck,
+};
+
+function ServiceCard({ service }: { service: Service }) {
+  const Icon = icons[service.title];
+
+  return (
+    <div className="group rounded border border-border p-6 transition-colors duration-200 hover:border-signal/50 hover:bg-panel/60">
+      <div className="flex h-11 w-11 items-center justify-center rounded border border-border text-signal transition-colors duration-200 group-hover:border-signal/60">
+        {Icon && <Icon size={20} />}
+      </div>
+      <h3 className="mt-5 font-display text-lg text-paper">{service.title}</h3>
+      <p className="mt-2 text-muted">{service.description}</p>
+    </div>
+  );
+}
 
 export default function Services() {
   return (
@@ -13,15 +40,9 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="border-t border-border">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
-          <div
-            key={service.title}
-            className="grid gap-2 border-b border-border py-6 sm:grid-cols-[minmax(0,16rem)_1fr] sm:gap-8"
-          >
-            <h3 className="font-display text-lg text-paper">{service.title}</h3>
-            <p className="max-w-[58ch] text-muted">{service.description}</p>
-          </div>
+          <ServiceCard key={service.title} service={service} />
         ))}
       </div>
     </section>
