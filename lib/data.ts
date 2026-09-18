@@ -5,7 +5,7 @@ export const siteConfig = {
   availability: "Open to freelance work & internships",
   summary:
     "I build full-stack web and mobile products — from AI-powered platforms to client business sites — for teams in Pakistan and beyond. Final-year Computer Science student, currently shipping a smart agriculture platform as my degree project.",
-  email: "muzamilalikehar2004@gmail.com",
+  email: "muzammilalikehar@gmail.com",
   linkedin: "https://www.linkedin.com/in/muzamil-kehar2004",
   github: "https://github.com/muzamilkehar",
   resumeUrl: "/resume/Muzamil_Kehar_FullStack_Developer_Resume.docx",
