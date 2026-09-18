@@ -9,7 +9,7 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/in/muzamil-kehar2004",
   github: "https://github.com/muzamilkehar",
   resumeUrl: "/resume/Muzamil_Kehar_FullStack_Developer_Resume.docx",
-  siteUrl: "https://muzamilkehar.dev", // TODO: replace with your real domain once you have one
+  siteUrl: "https://muzamilkehar.vercel.app",
   keywords: [
     "Muzamil Kehar",
     "Full-Stack Developer Pakistan",
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     description:
       "A full-stack MERN site and admin panel for a computer and printer shop in Shikarpur — product catalog, category management, image uploads, and full technical SEO. A paid client build, live in production.",
     tech: ["React", "Vite", "Node.js", "Express", "MongoDB", "Cloudinary"],
-    liveUrl: "https://worldcomputerprinters.com/",
+    liveUrl: "https://worldcomputerprinters.com",
     poster: "https://res.cloudinary.com/ttzxb2pd/image/upload/v1789738150/Screenshot_2026-09-18_182835.png",
     video: "https://res.cloudinary.com/ttzxb2pd/video/upload/v1786876022/project-3.mp4",
     problem:
@@ -142,14 +142,12 @@ export const projects: Project[] = [
     title: "SentryScan",
     description:
       "A website security scanner — hand it a URL and it surfaces vulnerabilities, risks, and likely attack surfaces. Built as my information security course project.",
-    // TODO: confirm the exact stack you used and swap these tags out.
     tech: ["React", "Node.js", "Express"],
     liveUrl: "https://web-sentry.vercel.app/",
     poster: "https://res.cloudinary.com/ttzxb2pd/image/upload/v1789738048/Screenshot_2026-09-18_182643.png",
     video: "https://res.cloudinary.com/ttzxb2pd/video/upload/v1789739945/Sentry-video.mp4",
     problem:
       "Manually auditing a website for security issues is slow and easy to get wrong. The course brief called for a tool that takes a URL and immediately flags what actually needs attention.",
-    // TODO: this is a placeholder — replace with the real checks/approach you built (e.g. which vulnerability classes you scan for, how results are scored).
     approach:
       "[Add the specific checks and scanning approach you implemented here — e.g. which vulnerability classes SentryScan looks for and how it scores results.]",
     outcome:

@@ -72,7 +72,6 @@ export default function ProjectCaseStudy({
         </div>
 
         <div className="relative mt-10 aspect-video w-full overflow-hidden rounded border border-border bg-panel2">
-          {/* Swap for a real screenshot or the poster frame once you have one. */}
           <video
             className="h-full w-full object-cover"
             src={project.video}

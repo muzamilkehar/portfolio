@@ -74,10 +74,6 @@ export default function Hero() {
 
         <motion.div variants={item} className="relative mx-auto w-full max-w-[320px]">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded border border-border bg-panel">
-            {/*
-              Add your photo at /public/images/profile.jpg (portrait orientation
-              works best here — roughly 4:5). This frame is sized for it already.
-            */}
             <Image
               src="https://res.cloudinary.com/ttzxb2pd/image/upload/v1789546185/Profile_picture_1.jpg"
               alt={`${siteConfig.name}, ${siteConfig.role}`}

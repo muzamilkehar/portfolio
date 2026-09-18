@@ -2,9 +2,6 @@ import type { ComponentType } from "react";
 import { Layers, Globe, Sparkles, Smartphone, ShieldCheck } from "lucide-react";
 import { services, type Service } from "@/lib/data";
 
-// Icon choice is a presentation decision, kept here rather than in lib/data.ts
-// so the content file stays pure copy. Keyed by title — add a matching icon
-// here if you add a new service.
 const icons: Record<string, ComponentType<any>> = {
   "Full-stack web applications": Layers,
   "Business & marketing sites": Globe,

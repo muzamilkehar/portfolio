@@ -35,10 +35,6 @@ import { Webhook, KeyRound } from "lucide-react";
 
 type IconComponent = ComponentType<any>;
 
-// A few of these don't have a real brand mark in Simple Icons (REST APIs is
-// a concept, not a company; bcrypt never shipped a logo), so those two fall
-// back to a generic lucide icon instead of guessing at a brand name that
-// doesn't exist — an invented icon name would just fail to compile.
 export const skillIcons: Record<string, IconComponent> = {
   React: SiReact,
   "Next.js": SiNextdotjs,
@@ -69,7 +65,7 @@ export const skillIcons: Record<string, IconComponent> = {
   Cloudinary: SiCloudinary,
   Git: SiGit,
   GitHub: SiGithub,
-  "Git & GitHub": SiGithub, // in case you keep these combined into one tag
+  "Git & GitHub": SiGithub, 
   "Cisco Packet Tracer": SiCisco,
   PostgreSQL: SiPostgresql,
   Postgres: SiPostgresql,

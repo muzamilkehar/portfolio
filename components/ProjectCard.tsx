@@ -12,7 +12,6 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   const play = () => {
     videoRef.current?.play().catch(() => {
-      /* Autoplay can be blocked before the file exists locally — ignore. */
     });
     setPlaying(true);
   };
