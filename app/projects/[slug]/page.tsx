@@ -69,17 +69,6 @@ export default function ProjectCaseStudy({
               Visit project
             </a>
           )}
-          {project.codeUrl && (
-            <a
-              href={project.codeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm text-paper underline decoration-border underline-offset-4 hover:decoration-signal hover:text-signal"
-            >
-              <Github size={14} />
-              View code
-            </a>
-          )}
         </div>
 
         <div className="relative mt-10 aspect-video w-full overflow-hidden rounded border border-border bg-panel2">

@@ -2,7 +2,8 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, ExternalLink, Play } from "lucide-react";
+import { track } from "@vercel/analytics";
 import type { Project } from "@/lib/data";
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -36,13 +37,9 @@ export default function ProjectCard({ project }: { project: Project }) {
         className="group relative block aspect-video w-full overflow-hidden bg-panel2 text-left"
         aria-label={`Play preview of ${project.title}`}
       >
-        {/*
-          Landscape (16:9) media. Point these at your Cloudinary URLs in
-          lib/data.ts, or drop local files matching the paths already there.
-        */}
         <video
           ref={videoRef}
-          className="h-full w-full object-fit"
+          className="h-full w-full object-cover"
           src={project.video}
           poster={project.poster}
           muted
@@ -72,13 +69,29 @@ export default function ProjectCard({ project }: { project: Project }) {
           ))}
         </ul>
 
-        <Link
-          href={`/projects/${project.slug}`}
-          className="mt-5 inline-flex items-center gap-1.5 text-sm text-signal underline decoration-signal/40 underline-offset-4 hover:decoration-signal"
-        >
-          View case study
-          <ArrowRight size={14} />
-        </Link>
+        <div className="mt-5 flex flex-wrap items-center gap-4">
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() =>
+                track("project_visit", { project: project.slug, location: "grid_card" })
+              }
+              className="inline-flex items-center gap-1.5   text-sm font-medium text-signal transition-colors hover:text-signal/80"
+            >
+              <ExternalLink size={14} />
+              Visit site
+            </a>
+          )}
+          <Link
+            href={`/projects/${project.slug}`}
+            className="inline-flex items-center gap-1.5 text-sm text-signal underline decoration-signal/40 underline-offset-4 hover:decoration-signal"
+          >
+            View case study
+            <ArrowRight size={14} />
+          </Link>
+        </div>
       </div>
     </article>
   );

@@ -110,7 +110,6 @@ export const projects: Project[] = [
       "An AI-powered platform for plant disease detection, crop yield prediction, soil monitoring, and weather forecasting — built with a four-person team as my final year project. Role-based dashboards for admins and farmers, each with its own theme.",
     tech: ["React", "Vite", "Tailwind CSS", "React Router", "OpenWeatherMap API"],
     liveUrl: undefined,
-    codeUrl: undefined,
     poster: "https://res.cloudinary.com/ttzxb2pd/image/upload/v1786874493/project1-img.png",
     video: "https://res.cloudinary.com/ttzxb2pd/video/upload/v1786874546/project1.mp4",
     problem:
@@ -127,8 +126,7 @@ export const projects: Project[] = [
     description:
       "A full-stack MERN site and admin panel for a computer and printer shop in Shikarpur — product catalog, category management, image uploads, and full technical SEO. A paid client build, live in production.",
     tech: ["React", "Vite", "Node.js", "Express", "MongoDB", "Cloudinary"],
-    liveUrl: undefined,
-    codeUrl: "https://github.com/worldcomputerprinters/frontend",
+    liveUrl: "https://worldcomputerprinters.com/",
     poster: "https://res.cloudinary.com/ttzxb2pd/image/upload/v1789738150/Screenshot_2026-09-18_182835.png",
     video: "https://res.cloudinary.com/ttzxb2pd/video/upload/v1786876022/project-3.mp4",
     problem:
@@ -146,8 +144,7 @@ export const projects: Project[] = [
       "A website security scanner — hand it a URL and it surfaces vulnerabilities, risks, and likely attack surfaces. Built as my information security course project.",
     // TODO: confirm the exact stack you used and swap these tags out.
     tech: ["React", "Node.js", "Express"],
-    liveUrl: undefined,
-    codeUrl: undefined,
+    liveUrl: "https://web-sentry.vercel.app/",
     poster: "https://res.cloudinary.com/ttzxb2pd/image/upload/v1789738048/Screenshot_2026-09-18_182643.png",
     video: "https://res.cloudinary.com/ttzxb2pd/video/upload/v1789739945/Sentry-video.mp4",
     problem:
@@ -158,7 +155,7 @@ export const projects: Project[] = [
     outcome:
       "Delivered as a complete, full-page site for the information security course, producing accurate results for a given URL.",
   },
-  
+
 ];
 
 export type Testimonial = {
