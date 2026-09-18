@@ -120,25 +120,6 @@ export const projects: Project[] = [
     outcome:
       "Reached an advanced stage with authentication, the dashboard, and RBAC all working. The Plant.id disease-detection API hit CORS restrictions from the browser, so the demo uses realistic dummy results for that one module while the rest of the platform runs on real data. // TODO: update this once the CORS workaround or a backend proxy is in place.",
   },
-  {
-    slug: "sentryscan",
-    title: "SentryScan",
-    description:
-      "A website security scanner — hand it a URL and it surfaces vulnerabilities, risks, and likely attack surfaces. Built as my information security course project.",
-    // TODO: confirm the exact stack you used and swap these tags out.
-    tech: ["React", "Node.js", "Express"],
-    liveUrl: undefined,
-    codeUrl: undefined,
-    poster: "https://res.cloudinary.com/ttzxb2pd/image/upload/v1789738048/Screenshot_2026-09-18_182643.png",
-    video: "https://res.cloudinary.com/ttzxb2pd/video/upload/v1789739945/Sentry-video.mp4",
-    problem:
-      "Manually auditing a website for security issues is slow and easy to get wrong. The course brief called for a tool that takes a URL and immediately flags what actually needs attention.",
-    // TODO: this is a placeholder — replace with the real checks/approach you built (e.g. which vulnerability classes you scan for, how results are scored).
-    approach:
-      "[Add the specific checks and scanning approach you implemented here — e.g. which vulnerability classes SentryScan looks for and how it scores results.]",
-    outcome:
-      "Delivered as a complete, full-page site for the information security course, producing accurate results for a given URL.",
-  },
  
   {
     slug: "world-computers-printers",
@@ -157,6 +138,27 @@ export const projects: Project[] = [
     outcome:
       "Live and in production for a paying client. Currently building an image carousel for product detail pages so each product can show multiple angles.",
   },
+
+    {
+    slug: "sentryscan",
+    title: "SentryScan",
+    description:
+      "A website security scanner — hand it a URL and it surfaces vulnerabilities, risks, and likely attack surfaces. Built as my information security course project.",
+    // TODO: confirm the exact stack you used and swap these tags out.
+    tech: ["React", "Node.js", "Express"],
+    liveUrl: undefined,
+    codeUrl: undefined,
+    poster: "https://res.cloudinary.com/ttzxb2pd/image/upload/v1789738048/Screenshot_2026-09-18_182643.png",
+    video: "https://res.cloudinary.com/ttzxb2pd/video/upload/v1789739945/Sentry-video.mp4",
+    problem:
+      "Manually auditing a website for security issues is slow and easy to get wrong. The course brief called for a tool that takes a URL and immediately flags what actually needs attention.",
+    // TODO: this is a placeholder — replace with the real checks/approach you built (e.g. which vulnerability classes you scan for, how results are scored).
+    approach:
+      "[Add the specific checks and scanning approach you implemented here — e.g. which vulnerability classes SentryScan looks for and how it scores results.]",
+    outcome:
+      "Delivered as a complete, full-page site for the information security course, producing accurate results for a given URL.",
+  },
+  
 ];
 
 export type Testimonial = {
