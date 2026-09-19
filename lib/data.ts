@@ -154,6 +154,26 @@ export const projects: Project[] = [
       "Delivered as a complete, full-page site for the information security course, producing accurate results for a given URL.",
   },
 
+  {
+  slug: "viewrank",
+  title: "View Rank",
+  description:
+    "A movie and TV series discovery platform that helps users explore titles, view ratings, search for content, and discover what to watch next. Built with a focus on a clean, responsive, and engaging user experience.",
+  tech: ["HTML", "CSS", "JavaScript", "TMDB API", "OMDb API", "Chart.js"],
+  liveUrl: "https://viewrank.vercel.app/",
+  poster: "https://res.cloudinary.com/ttzxb2pd/image/upload/v1786874491/project2-img.png",
+  video: "https://res.cloudinary.com/ttzxb2pd/video/upload/v1786874541/project2.mp4",
+
+  problem:
+    "Finding reliable movie and series information across different platforms can be time-consuming. View Rank brings titles, ratings, details, and discovery features together in one simple platform.",
+
+  approach:
+    "Built a responsive React application that integrates movie and series data from TMDB and OMDb APIs. Implemented search and content discovery, rating displays, detailed title information, separate movie and series sections, and dynamic content loading for a smooth browsing experience.",
+
+  outcome:
+    "Delivered a complete movie and series discovery platform with a modern responsive interface, real-time API data, rating-focused content, and an engaging browsing experience.",
+},
+
 ];
 
 export type Testimonial = {

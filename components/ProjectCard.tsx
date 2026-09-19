@@ -38,7 +38,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       >
         <video
           ref={videoRef}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-fit"
           src={project.video}
           poster={project.poster}
           muted

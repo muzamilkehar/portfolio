@@ -73,7 +73,7 @@ export default function ProjectCaseStudy({
 
         <div className="relative mt-10 aspect-video w-full overflow-hidden rounded border border-border bg-panel2">
           <video
-            className="h-full w-full object-cover"
+            className="h-full w-full object-fit"
             src={project.video}
             poster={project.poster}
             muted
