@@ -105,7 +105,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "smart-agriculture-platform",
-    title: "Smart Agriculture Platform",
+    title: "KisanAI Advisor - Smart Agriculture Platform",
     description:
       "An AI-powered platform for plant disease detection, crop yield prediction, soil monitoring, and weather forecasting — built with a four-person team as my final year project. Role-based dashboards for admins and farmers, each with its own theme.",
     tech: ["React", "Vite", "Tailwind CSS", "React Router", "OpenWeatherMap API"],
@@ -172,6 +172,26 @@ export const projects: Project[] = [
 
   outcome:
     "Delivered a complete movie and series discovery platform with a modern responsive interface, real-time API data, rating-focused content, and an engaging browsing experience.",
+},
+
+{
+  slug: "routine-tracker",
+  title: "Routine Tracker",
+  description:
+    "A full-stack habit and routine tracking app that helps users plan their daily habits, mark them as done, missed or skipped, and see their streaks and monthly progress. Built with a focus on a clean, simple and mobile-friendly experience.",
+  tech: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "MongoDB Atlas", "JWT Auth", "Vitest", "GitHub Actions", "Vercel"],
+  liveUrl: "https://routinetrack.vercel.app/",
+  poster: "https://res.cloudinary.com/ttzxb2pd/image/upload/v1792924989/Routine_tracker_poster.png",
+  video: "https://res.cloudinary.com/ttzxb2pd/video/upload/v1792868976/Routine.mp4",
+
+  problem:
+    "Many people start a good habit but stop after a few days because they forget or lose track of their progress. Most habit apps are either too complicated or hide useful features behind a paid plan. Routine Tracker keeps daily habits, streaks and progress in one simple place.",
+
+  approach:
+    "Built the complete app from scratch, from the database to the design and the live deployment. The React and TypeScript front end has a Today page for daily check-ins with quick actions to mark every habit at once, flexible schedules for each habit, and a Progress page with a monthly view, a yearly chart, a heatmap and a habit-by-habit report. The Node.js and Express back end uses MongoDB Atlas, secure login with protected sessions, input validation and rate limiting. I also added a settings page with data export, an admin panel for managing users, automated tests, and GitHub Actions to check the code on every update. The app is deployed on Vercel.",
+
+  outcome:
+    "Delivered a live, secure and responsive habit tracker that works on both phone and computer. Users can build daily routines, keep their streaks going and clearly see how they are improving each month, while the owner can manage the platform from the admin panel.",
 },
 
 ];
